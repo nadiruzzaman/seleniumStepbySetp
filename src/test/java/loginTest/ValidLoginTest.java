@@ -12,11 +12,7 @@ public class ValidLoginTest extends ScriptBase {
     LoginController loginController;
 
 
-    @Test
-    public void openBrowserWithChrome(){
-        init();
 
-    }
     @Test
     public void verifySignInButtonDisplayed(){
         loginController=new LoginController(driver);
