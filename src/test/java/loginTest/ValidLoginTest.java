@@ -1,6 +1,7 @@
 package loginTest;
 
 import base.ScriptBase;
+import controller.LoginController;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -8,25 +9,42 @@ import org.testng.annotations.Test;
 public class ValidLoginTest extends ScriptBase {
 
 
+    LoginController loginController;
+
+
     @Test
     public void openBrowserWithChrome(){
         init();
 
     }
+    @Test
+    public void verifySignInButtonDisplayed(){
+        loginController=new LoginController(driver);
+        loginController.signInButtonDisplay();
+
+    }
 
     @Test
-    public void verifySignInButtonDisplayed() throws InterruptedException {
+    public void verifyValidLogIn(){
+        loginController=new LoginController(driver);
+        loginController.signInButtonDisplay();
+        loginController.signInButtonEnable();
+        loginController.validLoginInput();
 
-    driver.findElement(By.xpath("//*[@id='header']/div[2]/div/div/nav/div[1]/a")).click();
-        driver.findElement(By.id("search_query_top")).sendKeys("Badol Vai");
-        driver.findElement(By.xpath("//*[@id='search_query_top']")).sendKeys("Ripon vai");
-        Thread.sleep(5000);
-        driver.findElement(By.xpath("//*[@id='search_query_top']")).clear();
+    }
 
-        WebElement element=driver.findElement(By.xpath("//*[@id='contact-link']/a"));
-        element.isDisplayed();
-        System.out.println(element.getText());
+    @Test
+    public void verifySignInButtonClickable(){
+        loginController=new LoginController(driver);
+        loginController.signInButtonClick();
 
+    }
+    @Test
+    public void verifySignInButtonEnable(){
+        loginController=new LoginController(driver);
+        loginController.signInButtonEnable();
 
     }
 }
+
+
