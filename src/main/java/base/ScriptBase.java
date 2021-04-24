@@ -8,14 +8,14 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 public class ScriptBase {
     public WebDriver driver;
 
+    @Parameters("browser")
     @BeforeTest
-    public void init() {
-        String browser = "safari";
-
+    public void init(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
