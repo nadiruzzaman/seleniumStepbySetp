@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">All Test Suite</th></tr>
+<tr><td><a href="#t0">Valid Login Test with chrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,656</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Overview Page</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,503</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Search Page</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,314</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">32,473</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Valid Login Test with chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">loginTest.ValidLoginTest</td><td><a href="#m0">verifySignInButtonClickable</a></td><td rowspan="1">1624717916573</td><td rowspan="1">1844</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Overview Page &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">overviewPage.OverViewPageDisplayTest</td><td><a href="#m1">verifyMyPersonalInfoTextDisplayedInOverviewPage</a></td><td rowspan="1">1624717928245</td><td rowspan="1">39</td></tr><tr><th colspan="4">Overview Page &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">overviewPage.OverViewPageDisplayTest</td><td><a href="#m2">verifyBestSellersTextDisplayedInOverviewPage</a></td><td rowspan="1">1624717926797</td><td rowspan="1">54</td></tr><tr class="passedeven"><td><a href="#m3">verifyNewProductsTextDisplayedInOverviewPage</a></td><td rowspan="1">1624717925552</td><td rowspan="1">39</td></tr><tr class="passedeven"><td><a href="#m4">verifySpecialsTextDisplayedInOverviewPage</a></td><td rowspan="1">1624717923873</td><td rowspan="1">296</td></tr><tr class="passedeven"><td><a href="#m5">verifyTopsButtonDisplayedUnderWomenCat</a></td><td rowspan="1">1624717929548</td><td rowspan="1">2212</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Search Page &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">searchTest.validProductSearch</td><td><a href="#m6">verifySearchByCap</a></td><td rowspan="1">1624717940333</td><td rowspan="1">923</td></tr><tr><th colspan="4">Search Page &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">searchTest.validProductSearch</td><td><a href="#m7">verifySearchByDress</a></td><td rowspan="1">1624717937956</td><td rowspan="1">1823</td></tr></tbody>
+</table>
+<h2>Valid Login Test with chrome</h2><h3 id="m0">loginTest.ValidLoginTest#verifySignInButtonClickable</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifySignInButtonClickable_26_06_2021_10_31_58.png'> <image src='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifySignInButtonClickable_26_06_2021_10_31_58.png' height='100' width='100'/> </a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Overview Page</h2><h3 id="m1">overviewPage.OverViewPageDisplayTest#verifyMyPersonalInfoTextDisplayedInOverviewPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/failure_screenshots/verifyMyPersonalInfoTextDisplayedInOverviewPage_26_06_2021_10_32_08.png'> <image src='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/failure_screenshots/verifyMyPersonalInfoTextDisplayedInOverviewPage_26_06_2021_10_32_08.png' height='100' width='100'/> </a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;ZamanName&apos;)]&quot;}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
+System info: host: &apos;Nadiruzzamans-MacBook-Pro.local&apos;, ip: &apos;192.168.200.40&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /var/folders/mm/x4ngx3h945v...}, goog:chromeOptions: {debuggerAddress: localhost:59060}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 64477fcd304332f7017201bb3bd0e77a
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;ZamanName&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at controller.OverviewPageController.overviewPageInfo(OverviewPageController.java:33)
+	at overviewPage.OverViewPageDisplayTest.verifyMyPersonalInfoTextDisplayedInOverviewPage(OverViewPageDisplayTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">overviewPage.OverViewPageDisplayTest#verifyBestSellersTextDisplayedInOverviewPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifyBestSellersTextDisplayedInOverviewPage_26_06_2021_10_32_06.png'> <image src='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifyBestSellersTextDisplayedInOverviewPage_26_06_2021_10_32_06.png' height='100' width='100'/> </a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">overviewPage.OverViewPageDisplayTest#verifyNewProductsTextDisplayedInOverviewPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifyNewProductsTextDisplayedInOverviewPage_26_06_2021_10_32_05.png'> <image src='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifyNewProductsTextDisplayedInOverviewPage_26_06_2021_10_32_05.png' height='100' width='100'/> </a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">overviewPage.OverViewPageDisplayTest#verifySpecialsTextDisplayedInOverviewPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifySpecialsTextDisplayedInOverviewPage_26_06_2021_10_32_04.png'> <image src='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifySpecialsTextDisplayedInOverviewPage_26_06_2021_10_32_04.png' height='100' width='100'/> </a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">overviewPage.OverViewPageDisplayTest#verifyTopsButtonDisplayedUnderWomenCat</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifyTopsButtonDisplayedUnderWomenCat_26_06_2021_10_32_11.png'> <image src='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifyTopsButtonDisplayedUnderWomenCat_26_06_2021_10_32_11.png' height='100' width='100'/> </a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Search Page</h2><h3 id="m6">searchTest.validProductSearch#verifySearchByCap</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/failure_screenshots/verifySearchByCap_26_06_2021_10_32_21.png'> <image src='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/failure_screenshots/verifySearchByCap_26_06_2021_10_32_21.png' height='100' width='100'/> </a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1/span[contains(text(),&apos;Cap&apos;)]&quot;}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
+System info: host: &apos;Nadiruzzamans-MacBook-Pro.local&apos;, ip: &apos;192.168.200.40&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /var/folders/mm/x4ngx3h945v...}, goog:chromeOptions: {debuggerAddress: localhost:59143}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: adcb95da7821651ef3d8078863c52d00
+*** Element info: {Using=xpath, value=//h1/span[contains(text(),&apos;Cap&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at controller.Search.searchDisplay(Search.java:26)
+	at controller.Search.searchProduct(Search.java:36)
+	at searchTest.validProductSearch.verifySearchByCap(validProductSearch.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">searchTest.validProductSearch#verifySearchByDress</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifySearchByDress_26_06_2021_10_32_19.png'> <image src='/Users/nadiruzzamanmuhammad/Documents/seleniumStepbySetp/src/main/java/success_screenshots/verifySearchByDress_26_06_2021_10_32_19.png' height='100' width='100'/> </a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

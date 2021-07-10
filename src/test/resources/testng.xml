@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="testng_listener.Listener"></listener>
+    </listeners>
+    <parameter name="browser" value="chrome"></parameter>
+    <test verbose="2" preserve-order="true" name="Valid Login Test with chrome">
+        <classes>
+            <class name="loginTest.ValidLoginTest">
+                <methods>
+                    <include name="verifySignInButtonClickable"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Overview Page">
+        <classes>
+            <class name="overviewPage.OverViewPageDisplayTest">
+                <methods>
+                    <include name="verifySpecialsTextDisplayedInOverviewPage"/>
+                    <include name="verifyNewProductsTextDisplayedInOverviewPage"/>
+                    <include name="verifyBestSellersTextDisplayedInOverviewPage"/>
+                    <include name="verifyMyPersonalInfoTextDisplayedInOverviewPage"/>
+                    <include name="verifyTopsButtonDisplayedUnderWomenCat"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+    <test verbose="2" preserve-order="true" name="Search Page">
+        <classes>
+            <class name="searchTest.validProductSearch">
+                <methods>
+                    <include name="verifySearchByDress"/>
+                    <include name="verifySearchByHat"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>
