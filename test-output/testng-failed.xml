@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="testng_listener.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Overview Page(failed)">
+    <classes>
+      <class name="overviewPage.OverViewPageDisplayTest">
+        <methods>
+          <include name="init"/>
+          <include name="endTest"/>
+          <include name="verifyMyPersonalInfoTextDisplayedInOverviewPage"/>
+        </methods>
+      </class> <!-- overviewPage.OverViewPageDisplayTest -->
+    </classes>
+  </test> <!-- Overview Page(failed) -->
+  <test thread-count="5" name="Search Page(failed)">
+    <classes>
+      <class name="searchTest.validProductSearch">
+        <methods>
+          <include name="verifySearchByCap"/>
+          <include name="init"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- searchTest.validProductSearch -->
+    </classes>
+  </test> <!-- Search Page(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
